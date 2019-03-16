@@ -1,115 +1,156 @@
+/* 
+ * CSS style sheet for Bootcamp Homework #1
+ * 3/14/2019
+ * ## Easier Assignment - Building a Wireframe
+ */
 
-.main-nav {
-  position: fixed;
-  top: 0;
-  z-index: 100;
-  padding-left: 15px;
-  padding-right: 15px;
-  background: steelblue;
-  box-shadow: 0px 3px 5px 0px darkslategrey;
-  height: 90px;
-  -webkit-transition: height, 1s;
-  transition: height, 1s;
+/* Set initial style for all */
+.wrapper {
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    color: #777;
+    background: #777;
+    width: 960px;
+    height: 960px;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: visible;
+    overflow: auto;
 }
 
-.valign-wrapper {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+/* 
+ * Define header block styles. Note usee of display: flex,
+ * align:items: center, and justify-content: center to 
+ * place text in center of block. 
+ */
+header {
+    background: #ebebeb;
+    width: 760px;
+    height: 60px;
+    text-align: center;
+    position: absolute;
+    top: 5px;
+    left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-nav {
-  color: #fff;
-  background-color: #ee6e73;
-  width: 100%;
-  height: 56px;
-  line-height: 56px;
+/* Define horizontal nav block styles. */
+#hNav {
+    background: #ebebeb;
+    width: 760px;
+    height: 60px;
+    text-align: center;
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1280px;
-  width: 90%;
+/* Define section block styles. */
+section {
+    background: #ebebeb;
+    width: 375px;
+    height: 225px;
+    text-align: center;
+    position: absolute;
+    top: 140px;
+    left: 100px;
+    margin-top: 50;
 }
 
-nav .nav-wrapper {
-  position: relative;
-  height: 100%;
+/* 
+ * Define style for div around the section text to take the 
+ * centered text down 20 pixels from the top.
+ */
+#sectionText {
+    position: relative;
+    top: 20px;
 }
 
-.fa, .fas {
-  font-weight: 900;
+/* Define article block styles. */
+article {
+    color: #ebebeb;
+    background: #777;
+    width: 350px;
+    height: 135px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    left: 10px;
 }
 
-nav .brand-logo {
-  position: absolute;
-  color: #fff;
-  display: inline-block;
-  font-size: 2.1rem;
-  padding: 0px;
+/* Define style for div around the article. */
+#articleHead {
+    color: #777;
+    background: #ebebeb;
+    width: 340px;
+    height: 40px;
+    position: relative;
+    top: 10px;
+    left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
-.spacer {
-  position: absolute;
-  top: 100px;
-  left: 100px;
-  border: 5px solid black;
-  background-color: red;
-  height: 300px;
-  width: 200px;
-  overflow: hidden;
+/* Define h1 style. */
+h1 {
+    color: #777;
+    background: #ebebeb;
 }
 
-ul:not(.browser-default) {
-  padding-left: 0px;
-  list-style-type: none;
+/* Define style for div around the paragraph. */
+#articlePara {
+    color: #777;
+    background: #ebebeb;
+    width: 340px;
+    height: 40px;
+    position: relative;
+    top: 20px;
+    left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.right {
-  float: right !important;
+/* Define p style. */
+p {
+    color: #777;
+    background: #ebebeb;
 }
 
-nav ul {
-  margin: 0px;
+/* Define aside style. */
+aside {
+    background: #ebebeb;
+    width: 375px;
+    height: 225px;
+    text-align: center;
+    position: absolute;
+    top: 140px;
+    left: 485px;
 }
 
-div {
-  display: block;
+/* Define style for div around the aside text. */
+#asideText {
+    position: relative;
+    top: 20px;
 }
 
-
-.hNav {
-  position: fixed;
-  top: 50px;
-  left: 300px;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111;
+/* Define footer style. */
+footer {
+    background: #ebebeb;
+    width: 760px;
+    height: 60px;
+    text-align: center;
+    position: absolute;
+    top: 380px;
+    left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
